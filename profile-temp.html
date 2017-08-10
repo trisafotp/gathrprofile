@@ -1,0 +1,16 @@
+<div class='container'></div> <!--main container (for a single event)-->
+  <div class='row'>
+    <div class='row event-overview'><!--date and event name row (always visible)-->
+      <div class='col-lg-2'><span class='month'>{{data.date.month}}</span> <span class='day'>{{data.date.day}}</span></div> <!--date column-->
+      <div class='col-lg-10'>{{data.partyName}}<span class='glyphicon glyphicon-chevron-down'></span></div>
+    </div>
+    <div class='row' style='display:none'><!--event details row (can be hidden)-->
+      <div class='row'><!--time and location row-->
+        <div class='col-lg-4'>{{data.time.start}} to {data.time.end}}</div>
+        <div class='col-lg-8'>{{data.location}}</div>
+      </div>
+      <div class='row'><!--user\'s committed items for event row-->
+        <div class='col-lg-12'>{{items.committed}}</div>
+    </div>
+  </div>
+</div>
